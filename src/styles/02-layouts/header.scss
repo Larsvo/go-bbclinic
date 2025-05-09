@@ -2,10 +2,26 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	//flex-wrap: wrap;
 	gap: 10rem;
-	
+	padding: 1.5rem;
+	@media ( max-width: 1440px) {
+		gap: 2rem;
+	}
 	&__body {
-		
+		max-width: rem(768);
+	}
+	
+	> picture {
+		flex: none;
+			@media ( max-width: 1440px) {
+			width: 33vw;
+			}
+			@media ( max-width: 952px) {
+				width: 33vw;
+			}
+		> img {
+			width: 100%;
+			//width: clamp(250px, 80vw, 33vw);
+		}
 	}
 }

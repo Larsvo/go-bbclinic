@@ -15,24 +15,34 @@ html {
 h1, h2 {
 	font-weight: $extrabold;
 	color: var(--main-color);
+	line-height: 1.2;
 }
 h1 {
 	font-size: 3rem;
 	color: var(--main-color);
+	@media (max-width: 952px) {
+		font-size: 2.25rem;
+	}
 }
 
 h2 {
 	font-size: 1.66rem;
+	@media (max-width: 952px) {
+		font-size: 1.5rem;
+	}
 }
 
 p {
 	.intro {
 		font-size: rem(22);
+
+		@media (max-width: 1200px) {
+			font-size: 1rem;
+		}
 	}
-	
+
 	&[role="doc-subtitle"] {
 		font-size: rem(28);
-		line-height: 0;
 	}
 
 }
