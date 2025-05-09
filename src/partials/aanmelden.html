@@ -1,0 +1,70 @@
+<form aria-labelledby="formulier-titel">
+    <h2 id="formulier-titel">Aanmeldformulier</h2>
+
+    <div>
+        <label for="voornaam">Voornaam</label>
+        <input type="text" id="voornaam" name="voornaam" autocomplete="given-name" required>
+    </div>
+
+    <div>
+        <label for="achternaam">Achternaam</label>
+        <input type="text" id="achternaam" name="achternaam" autocomplete="family-name" required>
+    </div>
+
+    <div>
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+    </div>
+
+    <div>
+        <label for="telefoon">Telefoonnummer</label>
+        <input type="tel" id="telefoon" name="telefoon" autocomplete="tel" required>
+    </div>
+
+    <div>
+        <label for="datum">Kies een datum</label>
+        <select id="datum" name="datum" required>
+            <option value="">-- Maak een keuze --</option>
+            <option value="2025-05-10">10 mei 2025</option>
+            <option value="2025-05-11">11 mei 2025</option>
+            <option value="2025-05-12">12 mei 2025</option>
+            <option value="2025-05-13">13 mei 2025</option>
+            <option value="2025-05-14">14 mei 2025</option>
+        </select>
+    </div>
+
+    <fieldset>
+        <legend>Kies een optie</legend>
+        <div>
+            <input type="radio" id="optie1" name="keuze" value="optie1" required>
+            <label for="optie1">Optie 1</label>
+        </div>
+        <div>
+            <input type="radio" id="optie2" name="keuze" value="optie2">
+            <label for="optie2">Optie 2</label>
+        </div>
+        <div>
+            <input type="radio" id="optie3" name="keuze" value="optie3">
+            <label for="optie3">Optie 3</label>
+        </div>
+        <div>
+            <input type="radio" id="optie4" name="keuze" value="optie4">
+            <label for="optie4">Optie 4</label>
+        </div>
+        <div>
+            <input type="radio" id="optie5" name="keuze" value="optie5">
+            <label for="optie5">Optie 5</label>
+        </div>
+        <div>
+            <input type="radio" id="optie6" name="keuze" value="optie6">
+            <label for="optie6">Optie 6</label>
+        </div>
+    </fieldset>
+
+    <div>
+        <input type="checkbox" id="voorwaarden" name="voorwaarden" required>
+        <label for="voorwaarden">Ik ga akkoord met de <a href="#" target="_blank">voorwaarden</a></label>
+    </div>
+
+    <button type="submit">Verstuur</button>
+</form>

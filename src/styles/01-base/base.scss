@@ -1,0 +1,34 @@
+*::selection {
+	color: var(--white);
+	background-color: var(--main-color);
+}
+
+body {
+	background-color: var(--bg-color);
+	width: 100%;
+	margin: 0;
+	position: relative;
+	overflow-x: hidden;
+	padding: 0;
+
+	.page-body {
+		max-width: rem(1440);
+		margin: auto;
+		@media (max-width: 1441px) {
+			margin: 0 1rem;
+		}
+	}
+
+	header {
+		padding: 1.5rem;
+	}
+
+	main {
+		border-radius: 2rem;
+		padding: 2.5rem  1.5rem;
+		background-color: var(--bg-content); 
+		position: relative;
+		bottom: 6rem;
+		z-index: -1;
+	}
+}

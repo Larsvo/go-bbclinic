@@ -1,0 +1,95 @@
+﻿//text overflow aantal regels variabel
+@mixin text-overflow($numLines: 1, $lineHeight: 1.412) {
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: block;
+    /* autoprefixer: off */
+    display: -webkit-box;
+    -webkit-line-clamp: $numLines;
+    -webkit-box-orient: vertical;
+    max-height: $numLines * $lineHeight + unquote('em');
+}
+//size
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+//square
+@mixin square($size) {
+    @include size($size, $size);
+}
+
+
+// mixin voor background image met hard coded image url
+@mixin bg-image-url($url) {
+    background: $url;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+
+// PLACEHOLDER
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+
+@mixin placeholder {
+    @include optional-at-root('::-webkit-input-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root('::-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-ms-input-placeholder') {
+        @content;
+    }
+}
+
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+    transition: $args,$args;
+}
+
+//triagle
+@mixin triangle($direction, $size, $color) {
+    width: 0;
+    height: 0;
+
+    @if $direction == 'up' {
+        border-left: em($size) solid transparent;
+        border-right: em($size) solid transparent;
+        border-bottom: em($size) solid $color;
+    }
+    @else if $direction == 'down' {
+        border-left: em($size) solid transparent;
+        border-right: em($size) solid transparent;
+        border-top: em($size) solid $color;
+    }
+    @else if $direction == 'right' {
+        border-top: em($size) solid transparent;
+        border-bottom: em($size) solid transparent;
+        border-left: em($size) solid $color;
+    }
+    @else if $direction == 'left' {
+        border-top: em($size) solid transparent;
+        border-bottom: em($size) solid transparent;
+        border-right: em($size) solid $color;
+    }
+}

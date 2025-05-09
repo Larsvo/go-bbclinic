@@ -1,0 +1,40 @@
+html {
+	font-family: "Open Sans", sans-serif;
+	font-size: var(--one-rem);
+	color: var(--black);
+	font-weight: $regular;
+	line-height: var(--line-height);
+	word-break: break-word;
+	-webkit-font-smoothing: antialiased;
+	font-smooth: always;
+	font-feature-settings: "liga" 0;
+	@media (max-width: 552px) {
+		font-size: 16px;
+	}
+}
+h1, h2 {
+	font-weight: $extrabold;
+	color: var(--main-color);
+}
+h1 {
+	font-size: 3rem;
+	color: var(--main-color);
+}
+
+h2 {
+	font-size: 1.66rem;
+}
+
+p {
+	.intro {
+		font-size: rem(22);
+	}
+	
+	&[role="doc-subtitle"] {
+		font-size: rem(28);
+		line-height: 0;
+	}
+
+}
+
+
