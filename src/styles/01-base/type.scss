@@ -8,15 +8,17 @@ html {
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
 	font-feature-settings: "liga" 0;
-	@media (max-width: 552px) {
+	@media (max-width: 768px) {
 		font-size: 16px;
 	}
 }
+
 h1, h2 {
 	font-weight: $extrabold;
 	color: var(--main-color);
 	line-height: 1.2;
 }
+
 h1 {
 	font-size: 3rem;
 	color: var(--main-color);
@@ -33,6 +35,9 @@ h2 {
 }
 
 p {
+	margin: .5rem 0;
+	max-width: rem(768);
+
 	.intro {
 		font-size: rem(22);
 
@@ -43,8 +48,9 @@ p {
 
 	&[role="doc-subtitle"] {
 		font-size: rem(28);
+		position: relative;
+		top: 1rem;
 	}
-
 }
 
 
