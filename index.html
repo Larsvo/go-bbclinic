@@ -13,17 +13,146 @@
 <div class="page-body">
     <header class="header">
         <section class="header__body">
-        <p role="doc-subtitle">Girls Only</p>
-        <h1>basketball clinic</h1>
-        <p class="intro">Op 3 mei organiseren de dames recreanten van BVA voor de tweede keer de Girls Only Clinic. Op deze manier willen zij meiden van 6-18 jaar kennis laten maken met basketball en met onze vereniging. Natuurlijk mogen ook onze eigen BVA-meiden meedoen</p>
+            <p role="doc-subtitle">Girls Only</p>
+            <h1>basketball clinic</h1>
+            <p class="intro">Op 3 mei organiseren de dames recreanten van BVA voor de tweede keer de Girls Only Clinic.
+                Op deze manier willen zij meiden van 6-18 jaar kennis laten maken met basketball en met onze vereniging.
+                Natuurlijk mogen ook onze eigen BVA-meiden meedoen</p>
         </section>
         <picture>
-            <img width="477" src="/src/images/player-1.png" alt="">
+            <img width="477" src="/src/images/player-1.webp" alt="">
         </picture>
     </header>
     <main>
+        <!--        //intro leidsters-->
         <h2>Wie zijn wij</h2>
-        <p>Maak kennis met het enthousiaste team van leidsters achter onze basketball clinic! Met jarenlange ervaring op het veld en een passie voor het spel, begeleiden wij jong en oud met plezier en toewijding. Samen zorgen we voor een inspirerende en leerzame omgeving, waarin sportiviteit, teamwork en plezier centraal staan. Ontdek hieronder wie wij zijn en waar wij voor staan!</p>
+        <p>Maak kennis met het enthousiaste team van leidsters achter onze basketball clinic! Met jarenlange ervaring op
+            het veld en een passie voor het spel, begeleiden wij jong en oud met plezier en toewijding. Samen zorgen we
+            voor een inspirerende en leerzame omgeving, waarin sportiviteit, teamwork en plezier centraal staan. Ontdek
+            hieronder wie wij zijn en waar wij voor staan!</p>
+        <!--        //nav leidsters-->
+
+        <nav class="players" role="tablist" aria-label="Voorbeeld tabs">
+            <button role="tab" id="tab-1" aria-selected="true" aria-controls="tabpanel-1" tabindex="0">Julia Van Dijk
+            </button>
+            <button role="tab" id="tab-2" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">Liza Kuijt
+            </button>
+            <button role="tab" id="tab-3" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">Floor Bakker
+            </button>
+            <button role="tab" id="tab-4" aria-selected="false" aria-controls="tabpanel-4" tabindex="-1">Sara de Vries
+            </button>
+        </nav>
+
+        <section id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1" class="players__item">
+            <picture>
+                <img width="320" src="/src/images/julia.webp" loading="lazy" alt="">
+            </picture>
+            <div>
+                <h2>Julia Van Dijk</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero ipsum, veniam magni modi
+                    exercitationem debitis ducimus assumenda ratione corporis, illum eius, laborum tempore cumque amet
+                    id perspiciatis nostrum unde?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, maiores.</p>
+            </div>
+        </section>
+        <section id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" hidden class="players__item">
+            <picture>
+                <img width="320" src="/src/images/liza.webp" loading="lazy" alt="">
+            </picture>
+            <div>
+                <h2>Liza Kuijt</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio cum eveniet excepturi eum
+                    provident molestias ad ipsa unde dignissimos illo porro animi earum aliquam perspiciatis id omnis,
+                    adipisci incidunt. Qui, beatae. Beatae animi totam obcaecati at quae, iste facere fuga nemo pariatur
+                    esse nihil?</p>
+            </div>
+            </p>
+        </section>
+        <section id="tabpanel-3" role="tabpanel" aria-labelledby="tab-3" hidden class="players__item">
+            <picture>
+                <img width="320" src="/src/images/floor.webp" loading="lazy" alt="">
+            </picture>
+            <div>
+                <h2>Floor Bakker</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis voluptas maiores
+                    deserunt ullam aliquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia accusantium quod fuga
+                    porro eius animi earum excepturi omnis! Reprehenderit!</p>
+            </div>
+        </section>
+        <section id="tabpanel-4" role="tabpanel" aria-labelledby="tab-4" hidden class="players__item">
+            <picture>
+                <img width="320" src="/src/images/sara.webp" loading="lazy" alt="">
+            </picture>
+            <div>
+                <h2>Sara de Vries</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia exercitationem veritatis vero
+                    eaque. Nam totam dolorem sapiente ullam non sed nostrum praesentium voluptatem, ad quam libero
+                    deserunt nemo fuga hic repudiandae veritatis cupiditate, mollitia recusandae!</p>
+            </div>
+        </section>
+        <!--        Aanmelden -->
+        <form aria-labelledby="aanmelden-titel" class="form">
+            <h2>Aanmelden</h2>
+            <div class="form__section form__section--flex">
+                <div>
+                    <label for="voornaam">Voornaam<span aria-hidden="true">*</span></label>
+                    <input type="text" id="voornaam" name="voornaam" required aria-describedby="voornaam-help"
+                           autocomplete="given-name">
+                    <span id="voornaam-help" class="form-help">Je voornaam is een verplicht veld in het formulier, vul het in voor dat je op verzenden klikt.</span>
+                </div>
+                <div>
+                    <label for="achternaam">Achternaam<span aria-hidden="true">*</span></label>
+                    <input type="text" id="achternaam" name="achternaam" required autocomplete="family-name">
+                </div>
+            </div>
+
+
+            <div class="form__section">
+                <label for="provincie">Provincie</label>
+                <select id="provincie" name="provincie" required>
+                    <option value="">Selecteer je provincie</option>
+                    <option value="groningen">Groningen</option>
+                    <option value="friesland">Friesland</option>
+                    <option value="drenthe">Drenthe</option>
+                    <option value="overijssel">Overijssel</option>
+                    <option value="flevoland">Flevoland</option>
+                    <option value="gelderland">Gelderland</option>
+                    <option value="utrecht">Utrecht</option>
+                    <option value="noord-holland">Noord-Holland</option>
+                    <option value="zuid-holland">Zuid-Holland</option>
+                    <option value="zeeland">Zeeland</option>
+                    <option value="noord-brabant">Noord-Brabant</option>
+                    <option value="limburg">Limburg</option>
+                </select>
+            </div>
+
+            <div class="form__section">
+                <label for="motivatie">Motivatie</label>
+                <textarea id="motivatie" name="motivatie" rows="4" placeholder="Schrijf hier je motivatie"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Wil je de nieuwsbrief ontvangen?</legend>
+                <div class="flex-b">
+                    <input type="radio" id="nieuwsbrief-ja" name="nieuwsbrief" value="ja" checked>
+                    <label for="nieuwsbrief-ja">Ja, graag</label>
+                </div>
+                <div class="flex-b">
+                    <input type="radio" id="nieuwsbrief-nee" name="nieuwsbrief" value="nee">
+                    <label for="nieuwsbrief-nee">Nee, bedankt</label>
+                </div>
+            </fieldset>
+
+            <div class="form__section">
+                <input type="checkbox" id="akkoord" name="akkoord" required>
+                <label for="akkoord">Ik ga akkoord met de algemene voorwaarden<span aria-hidden="true">*</span></label>
+            </div>
+            <div>
+                <button type="submit">Versturen</button>
+                <button type="reset">Annuleren</button>
+            </div>
+        </form>
     </main>
 </div>
 </body>

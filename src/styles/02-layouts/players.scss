@@ -1,50 +1,49 @@
-
-.tabs {
+.players {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	gap: 1rem;
-	clear: both;
 	position: relative;
-	max-width: 650px;
-	margin: 0 auto;
-	/* you can either manually set a min-height here or do it via JS ---> */
-}
+	width: 100%;
+	margin: 4rem auto 3rem;
+	border-bottom: 1px solid var(--gray);
 
-.tab {
-	float: left;
-}
+	> button {
+		padding: .5rem 0;
+		width: 100%;
+		text-align: center;
+		color: var(--gray);
 
-.tab label {
-	margin-right: 20px;
-	position: relative;
-	top: 0;
-	cursor: pointer;
-	color: #333;
-	text-transform: uppercase;
-}
+		cursor: pointer;
+		border-bottom: 4px solid transparent;
+		@include transition(all .2s ease-in-out);
 
-.tab [type=radio] {
-	display: none;
-}
+		&[aria-selected="true" ] {
+			font-weight: $semibold;
+			color: var(--black);
+			border-bottom: 4px solid var(--main-color);
+			z-index: 10;
+			@include transition(all .2s ease-in-out);
+		}
+	}
 
-.tab__content {
-	position: absolute;
-	top: 40px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
-	opacity: 0;
-}
+	&__item {
+		@include transition(all .2s ease-in-out);
+		opacity: 0;
 
-[type=radio]:checked ~ label {
-	border-bottom: 2px solid #1d1d1d;
-	color: #1d1d1d;
-	z-index: 2;
-}
+		&:not([hidden]) {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			gap: 2rem;
+			min-height: rem(420);
+			opacity: 1;
+			@include transition(all .2s ease-in-out);
+		}
 
-[type=radio]:checked ~ label ~ .tab__content {
-	z-index: 1;
-	opacity: 1;
+		> div {
+			max-width: rem(768);
+		}
+	}
 }
