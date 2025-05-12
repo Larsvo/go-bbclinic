@@ -1,0 +1,82 @@
+.faq {
+	width: 100%;
+	margin:1rem 0 4rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1.5rem 2rem;
+
+	&__item {
+		width: calc(50% - 1.5rem);
+		@media (max-width: 952px) {
+			width: 100%;
+		}
+
+		> h2 {
+			font-size: 1.25rem;
+
+			> button {
+				color: var(--black);
+				text-align: inherit;
+				display: flex;
+				gap: 1.5rem;
+				font-weight: 700;
+				border: none;
+				background-color: inherit;
+				@include transition(all .2s ease-in-out);
+
+				&:hover {
+					@include transition(all .2s ease-in-out);
+					color: var(--main-color);
+				}
+
+				@media (max-width: 768px) {
+					font-size: rem(28);
+					gap: .25rem;
+				}
+
+
+				> svg {
+					flex: none;
+					transform: rotate(0deg);
+					@include transition(transform .2s ease-in-out);
+
+				}
+
+				&[aria-expanded="true"] {
+					> svg {
+						@include transition(transform .2s ease-in-out);
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+	}
+
+	&__body {
+		padding-left: calc(1.5rem + 24px); // 24px is svg width
+		@media (max-width: 552px) {
+			padding-left: 1.5rem;
+		}
+
+		p {
+			margin: 0;
+			padding-bottom: .5rem;
+		}
+
+		a.leesmeer {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: .25rem;
+
+			@include transition(all .2s ease-in-out);
+
+			&:hover {
+				@include transition(all .2s ease-in-out);
+				color: var(--main-color);
+			}
+		}
+	}
+}

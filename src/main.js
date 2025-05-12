@@ -37,7 +37,6 @@ $(function() {
     // Als je op een tab klikt, activeer die tab
     $tabs.on('click', function() {
         // Bepaal de index van de aangeklikte tab
-        console.log("werkt niet")
         var idx = $tabs.index(this);
         // Activeer de juiste tab en bijbehorende panel
         activeerTab(idx);
