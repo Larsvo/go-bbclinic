@@ -101,9 +101,9 @@
             </section>
         </section>
         <section title="veel gestelde vragen">
-            <h2>Veel gestelde vragen</h2>
+            <h2>Veelgestelde vragen</h2>
             <div class="faq" id="accordion">
-                <section class="faq__item" id="header-Item-1">
+                <div class="faq__item" id="header-Item-1">
                     <h2>
                         <button href="" data-bs-toggle="collapse" data-bs-target="#Item-1" aria-expanded="false"
                                 aria-controls="Item-1">
@@ -120,7 +120,60 @@
                         beginners
                         als gevorderden zijn welkom
                     </div>
-                </section>
+                </div>
+                <div class="faq__item" id="header-Item-2">
+                    <h2>
+                        <button href="" data-bs-toggle="collapse" data-bs-target="#Item-2" aria-expanded="false"
+                                aria-controls="Item-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                      d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-1.78 4.28l-1.44 1.44L18.064 16l-5.282 5.28l1.44 1.44l6-6l.686-.72l-.687-.72z"/>
+                            </svg>
+                            Krijgt iedereen evenveel speeltijd tijdens wedstrijden?
+                        </button>
+                    </h2>
+                    <div id="Item-2" class="collapse faq__body" aria-labelledby="header-Item-2"
+                         data-bs-parent="#accordion">
+                        Speeltijd wordt meestal bepaald door inzet, aanwezigheid, en vaardigheden die tijdens trainingen
+                        en wedstrijden worden getoond. Coaches proberen vaak iedereen te laten spelen, maar het kan
+                        verschillen per team en niveau
+                    </div>
+                </div>
+                <div class="faq__item" id="header-Item-3">
+                    <h2>
+                        <button href="" data-bs-toggle="collapse" data-bs-target="#Item-3" aria-expanded="false"
+                                aria-controls="Item-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                      d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-1.78 4.28l-1.44 1.44L18.064 16l-5.282 5.28l1.44 1.44l6-6l.686-.72l-.687-.72z"/>
+                            </svg>
+                            Wat moet ik meenemen naar de training of clinic?
+                        </button>
+                    </h2>
+                    <div id="Item-3" class="collapse faq__body" aria-labelledby="header-Item-3"
+                         data-bs-parent="#accordion">
+                        Meestal wordt gevraagd om sportkleding, sportschoenen, een flesje water en eventueel een eigen
+                        basketbal mee te nemen. Specifieke informatie krijg je vaak na inschrijving
+                    </div>
+                </div>
+                <div class="faq__item" id="header-Item-4">
+                    <h2>
+                        <button href="" data-bs-toggle="collapse" data-bs-target="#Item-4" aria-expanded="false"
+                                aria-controls="Item-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                      d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-1.78 4.28l-1.44 1.44L18.064 16l-5.282 5.28l1.44 1.44l6-6l.686-.72l-.687-.72z"/>
+                            </svg>
+                            Kan ik meedoen als ik niet alle trainingen of wedstrijden kan bijwonen?
+                        </button>
+                    </h2>
+                    <div id="Item-4" class="collapse faq__body" aria-labelledby="header-Item-4"
+                         data-bs-parent="#accordion">
+                        Veel programma’s zijn flexibel, maar het is wel belangrijk om zo vaak mogelijk aanwezig te zijn
+                        voor de teamspirit en je eigen ontwikkeling. Overleg bij twijfel altijd met de coach of
+                        organisatie
+                    </div>
+                </div>
         </section>
         <section title="aanmeld formulier">
             <form aria-labelledby="aanmelden-titel" class="form">
@@ -182,6 +235,11 @@
                     <button type="reset">Annuleren</button>
                 </div>
             </form>
+            <script>
+                $(document).ready(function () {
+                    $('select').niceSelect();
+                });
+            </script>
         </section>
     </main>
 </div>

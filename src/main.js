@@ -2,6 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import './styles/styles.scss';
 import 'bootstrap/scss/bootstrap.scss';
+import 'plugins/nice-select/jquery.nice-select';
 
 
 // Wacht tot het hele document geladen is (jQuery shorthand voor $(document).ready)
