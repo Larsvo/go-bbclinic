@@ -1,26 +1,3 @@
-BBClinic
-
-BBClinic is a project aimed at delivering a web-based clinic management system. This repository contains the source code and assets needed for the application. The project is developed using SCSS, HTML, and JavaScript.
-
-Table of Contents
-
-Overview
-Features
-Installation
-Usage
-Contributing
-License
-Overview
-
-BBClinic is designed to streamline the day-to-day operations of clinics, including appointment scheduling, patient management, and more. The project uses modern front-end technologies for a responsive and user-friendly experience.
-
-Features
-
-Responsive Design: Built with SCSS for a polished and flexible UI.
-Appointment Scheduling: Manage appointments with ease.
-Patient Management: Organize patient records efficiently.
-Customizable: Designed to be extended based on clinic needs.
-Installation
 
 Clone the repository:
 bash
