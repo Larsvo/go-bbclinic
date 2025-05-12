@@ -76,3 +76,11 @@ $(function() {
         }
     });
 });
+
+//melding dat je bent aangemeld
+$('#aanmelden').on('submit', function(e) {
+    e.preventDefault(); // voorkomt daadwerkelijk versturen
+    var data = $(this).serializeArray();
+    localStorage.setItem('formulierGegevens', JSON.stringify(data));
+    $('#melding').fadeIn(); // Laat de melding zien
+});
