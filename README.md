@@ -23,7 +23,7 @@ Customizable: Designed to be extended based on clinic needs.
 Installation
 
 Clone the repository:
-`bash
+bash
 git clone https://github.com/Larsvo/go-bbclinic.git
 Navigate to the project directory:
 bash
@@ -33,7 +33,7 @@ bash
 npm install
 Start the development server:
 bash
-npm run dev`
+npm run dev
 Usage
 
 After starting the development server, open your browser and navigate to the address provided in the terminal (usually http://localhost:3000) to explore the application.
