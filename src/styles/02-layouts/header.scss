@@ -6,21 +6,45 @@
 	padding: 1.5rem 2.5rem;
 	z-index: 1;
 	position: relative;
-	@media ( max-width: 1440px) {
+	@media (max-width: 1440px) {
 		gap: 2rem;
 	}
+
+	@media (max-width: 1200px) {
+		padding:0  1.5rem 4rem;
+	}
+
+	@media (max-width: 952px) {
+		padding: 1.5rem 1.5rem 4rem;
+	}
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+		gap: 0;
+		padding: 0 1.5rem 2rem;
+	}
+
 	&__body {
 		max-width: rem(768);
+		@media (max-width: 600px) {
+			order: 2;
+		}
+
 	}
-	
+
 	> picture {
 		flex: none;
-			@media ( max-width: 1440px) {
+		@media (max-width: 1440px) {
 			width: 33vw;
-			}
-			@media ( max-width: 952px) {
-				width: 33vw;
-			}
+		}
+		@media (max-width: 1200px) {
+			width: 25vw;
+		}
+		@media (max-width: 600px) {
+			order: 1;
+			width: 50vw;
+		}
+
 		> img {
 			width: 100%;
 		}

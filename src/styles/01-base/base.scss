@@ -18,15 +18,25 @@ body {
 			margin: 0 1rem;
 		}
 	}
-	
+
 	main {
 		border-radius: 2rem;
-		padding: 2.5rem  2.5rem;
-		background-color: var(--bg-content); 
+		padding: 2.5rem 2.5rem;
+		background-color: var(--bg-content);
 		position: relative;
 		bottom: 6rem;
 		z-index: 0;
-		
+
+		@media (max-width: 1200px) {
+			padding: 1.5rem;
+			bottom: 3rem;
+		}
+
+		@media (max-width: 600px) {
+			bottom: 0;
+			padding: 2.5rem 1.5rem;
+		}
+
 		> section {
 			margin-bottom: 4rem;
 		}

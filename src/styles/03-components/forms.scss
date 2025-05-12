@@ -7,14 +7,25 @@
 	&__section {
 		width: 50%;
 
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+
 		&--flex {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 4rem;
 			width: 100%;
+			@media (max-width: 768px) {
+				gap: 1rem;
+			}
 
 			> div {
-				width: calc(50% - 2rem);
+				width: calc(50% - 3rem);
+
+				@media (max-width: 768px) {
+					width: calc(100% - 2rem);
+				}
 			}
 		}
 	}
@@ -25,9 +36,19 @@
 		margin-bottom: 0.5rem;
 	}
 
-	input[type="text"],
-	select,
 	textarea {
+		width: calc(100% - 2rem);
+		padding: 1rem;
+		border: 1px solid var(--gray);
+		border-radius: 1rem;
+		font-size: 1rem;
+		background-color: var(--white);
+		margin-bottom: 0.5rem;
+		@include transition(border .2s ease-in-out);
+	}
+
+	input[type="text"],
+	select {
 		width: 100%;
 		padding: 1rem;
 		border: 1px solid var(--gray);
@@ -50,7 +71,7 @@
 	select.error,
 	textarea.error {
 		border-color: var(--main-color);
-		
+
 	}
 
 	.form-help,
@@ -75,12 +96,20 @@
 		@include square(1rem);
 		position: relative;
 		bottom: 3px;
-		
+
 		+ label {
 			font-weight: $regular;
+			@media ( max-width: 450px) {
+			
+			max-width: rem(300);
+			}
 		}
 	}
-	
+
+	& h3 {
+		color: var(--main-color);
+		display: none;
+	}
 }
 
 
