@@ -191,21 +191,12 @@
                     </div>
                 </div>
                 <div class="form__section">
-                    <label for="provincie">Provincie</label>
-                    <select id="provincie" name="provincie" required>
-                        <option value="">Selecteer je provincie</option>
-                        <option value="groningen">Groningen</option>
-                        <option value="friesland">Friesland</option>
-                        <option value="drenthe">Drenthe</option>
-                        <option value="overijssel">Overijssel</option>
-                        <option value="flevoland">Flevoland</option>
-                        <option value="gelderland">Gelderland</option>
-                        <option value="utrecht">Utrecht</option>
-                        <option value="noord-holland">Noord-Holland</option>
-                        <option value="zuid-holland">Zuid-Holland</option>
-                        <option value="zeeland">Zeeland</option>
-                        <option value="noord-brabant">Noord-Brabant</option>
-                        <option value="limburg">Limburg</option>
+                    <label for="cars">Choose a car:</label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
                     </select>
                 </div>
                 <div class="form__section">
@@ -235,13 +226,14 @@
                     <button type="reset">Annuleren</button>
                 </div>
             </form>
-            <script>
-                $(document).ready(function () {
-                    $('select').niceSelect();
-                });
-            </script>
+       
         </section>
     </main>
 </div>
 </body>
+<script>
+    $(document).ready(function() {
+        $('select').niceSelect();
+    });
+</script>
 </html>
