@@ -51,6 +51,8 @@
 			@include transition(all .2s ease-in-out);
 			@media ( max-width: 768px) {
 			flex-direction: column;
+				gap: 0;
+				min-height: auto;
 			}
 		}
 
