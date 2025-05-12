@@ -20,7 +20,7 @@
 				color: var(--black);
 				text-align: inherit;
 				display: flex;
-				gap: 1.5rem;
+				gap: 1rem;
 				font-weight: 700;
 				border: none;
 				background-color: inherit;
@@ -65,18 +65,5 @@
 			padding-bottom: .5rem;
 		}
 
-		a.leesmeer {
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: .25rem;
-
-			@include transition(all .2s ease-in-out);
-
-			&:hover {
-				@include transition(all .2s ease-in-out);
-				color: var(--main-color);
-			}
-		}
 	}
 }
