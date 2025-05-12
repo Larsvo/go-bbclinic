@@ -19,9 +19,9 @@
 		}
 	}
 
-	label {
+	label, legend {
 		display: block;
-		//font-weight: $bold;
+		font-weight: $semibold;
 		margin-bottom: 0.5rem;
 	}
 
@@ -58,6 +58,9 @@
 		color: var(--main-color);
 		font-size: .8rem;
 		margin-bottom: 1rem;
+		font-weight: $bold;
+		line-height: 1.6;
+		display: block;
 	}
 
 	fieldset {
@@ -72,14 +75,12 @@
 		@include square(1rem);
 		position: relative;
 		bottom: 3px;
+		
+		+ label {
+			font-weight: $regular;
+		}
 	}
-
-	.checkbox-label {
-		display: flex;
-		align-items: center;
-		gap: 0.5em;
-		margin-bottom: 1.2rem;
-	}
+	
 }
 
 

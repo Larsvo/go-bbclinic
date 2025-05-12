@@ -5,11 +5,11 @@
     "vite": "^6.3.5"
   },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
-    "jquery": "^3.7.1",
-    "jquery-nice-select": "^1.1.0"
+    "jquery": "^3.7.1"
   }
 }
