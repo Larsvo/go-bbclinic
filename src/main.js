@@ -3,7 +3,6 @@ import 'bootstrap';
 import './styles/styles.scss';
 import 'bootstrap/scss/bootstrap.scss';
 
-
 //tabs van het "wie zijn wij" item
 $(function() {
     // Selecteer alle elementen met role="tab" (de tab-knoppen)
@@ -35,7 +34,6 @@ $(function() {
         // Activeer de juiste tab en bijbehorende panel
         activeerTab(idx);
     });
-
 });
 
 //melding dat je bent aangemeld formulier
