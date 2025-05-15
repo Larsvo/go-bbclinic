@@ -49,15 +49,15 @@
 			min-height: rem(420);
 			opacity: 1;
 			@include transition(all .2s ease-in-out);
-			@media ( max-width: 768px) {
-			flex-direction: column;
+			@media (max-width: 768px) {
+				flex-direction: column;
 				gap: 0;
 				min-height: auto;
 			}
 		}
 
 		> picture {
-			@media ( max-width: 768px) {
+			@media (max-width: 768px) {
 				width: rem(350);
 			}
 
@@ -69,7 +69,6 @@
 
 		> div {
 			max-width: rem(768);
-
 		}
 	}
 }

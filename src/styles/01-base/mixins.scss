@@ -21,7 +21,6 @@
     @include size($size, $size);
 }
 
-
 // mixin voor background image met hard coded image url
 @mixin bg-image-url($url) {
     background: $url;
@@ -30,7 +29,6 @@
     background-size: contain;
     display: block;
 }
-
 
 // PLACEHOLDER
 @mixin optional-at-root($sel) {
@@ -57,7 +55,7 @@
     }
 }
 
-
+//transition
 @mixin transition($args...) {
     -webkit-transition: $args;
     -moz-transition: $args;
